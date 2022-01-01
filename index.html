@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arthi Padmanabhan</title>
+    <link rel="shortcut icon" href="imgs/bruin_logo.png">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="bulma.min.css"
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+  <section class="hero is-info">
+    <div class="hero-body">
+      <div class="container">
+      <div class="columns">
+        <div class="column is-narrow">
+          <section class="section">
+            <div class="container is-fluid">
+<!--               <figure class="image is-128x128", style="margin:auto;">
+ -->            <figure class="image is-128x128", style="margin:auto;">
+                <img src="imgs/artpad_hike.jpg">
+              </figure>
+            </div>
+          </section>
+        </div>
+        <div class="column is-three-quarters">
+          <section class="section">
+              <h1 class="title">
+                Arthi Padmanabhan
+              </h1>
+              <h2 class="subtitle">
+                Ph.D. Candidate<br>
+                <!-- Computer Science Department<br> -->
+                UCLA Computer Science<br>
+                Email: artpad@ucla.edu
+              </h2>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <div class="container">
+  <section class="section">
+      <div class="content">
+        <!-- <header><h1>About Me</h1></header> -->
+        <p>
+          I'm a Ph.D. candidate at UCLA advised by 
+          <a href="http://web.cs.ucla.edu/~harryxu/">Harry Xu</a> and <a href="https://www.cs.princeton.edu/~ravian/">Ravi Netravali</a>. I'm broadly interested in systems and networking, and my research focuses on building systems that enable scalable machine learning on real-time video data. Specifically, the systems I build target an improved tradeoff between performance (e.g., accuracy, latency) and resource usage (e.g., cost, memory, bandwidth consumption) in large-scale video analytics systems. Before joining UCLA, I was a software engineer at Microsoft for three years, working on Microsoft Office's UI and accessibility on Mac and iOS. Before that, I received a B.A. in Computer Science from Pomona College in 2014.
+        </p>
+      </div>
+  </section>
+  <section class="section">
+      <div class="content">
+        <header><h1>Research</h1></header>
+        <ul>
+        <h2 class="subtitle is-5">Gemel: Model Merging for Memory-Efficient Real-Time Video Analytics at the Edge</h2>
+          <ul>
+            Through a collaboration with Microsoft Research, we built Gemel, a system for lowering the memory footprint of running a diverse set of deep neural networks (DNNs) on the edge for processing video. We found that typical workloads of DNNs have large groups of layers that appear in multiple models, and keeping just one copy of them could result in significantly lower GPU memory usage. However, merging layers can result in lower accuracy. We designed a search heuristic to decide which layers could be shared while meeting accuracy constraints. Gemel lowered memory usage by up to 60% and will be incorporated into Microsoft's deployed pilot project, <a href="https://www.microsoft.com/en-us/research/project/live-video-analytics/">Rocket for Live Video Analytics</a>.
+          </ul>
+        <h2 class="subtitle is-5">Reducto: On-Camera Frame Filtering for Resource-Efficient Real-Time Video Analytics</h2>
+          <ul>
+            I worked with colleagues at UCLA to build a system that filters out unnecessary frames for responding to video analytics queries directly at the camera. Our filtering methods use light-weight frame differencing features, allowing real-time filtering even on cheap cameras. These methods filtered over 50% of frames while meeting accuracy targets, thereby lowering bandwidth usage by 22% and latency by 26%.
+          </ul>
+        </ul>
+      </div>
+  </section>
+  <section class="section">
+      <div class="content">
+        <header><h1>Publications</h1></header>
+        <ul>
+          <li>
+            <b>Arthi Padmanabhan</b>, Neil Agarwal, Anand Iyer, Ganesh Ananthanarayanan, Yuanchao Shu, Nikolaos Karianakis, Harry Xu, and Ravi Netravali. <i>Gemel: Model Merging for Memory-Efficient Real-Time Video Analytics at the Edge</i>. In Submission.
+          </li>
+          <li>
+            <b>Arthi Padmanabhan</b>, Anand Iyer, Ganesh Ananthanarayanan, Yuanchao Shu, Nikolaos Karianakis, Harry Xu, and Ravi Netravali.
+            <i>Towards Memory-Efficient Inference in Edge Video Analytics</i>. In the Proceedings of the 3rd ACM Workshop on Hot Topics in Video Analytics and Intelligent (HotEdgeVideo 2021).
+            [<a class="nav-link active" href="papers/merging_hotedgevideo21.pdf"> PDF </a>]
+          </li>
+          <li>
+            Yuanqi Li*, <b>Arthi Padmanabhan*</b>, Pengzhan Zhou, Yufei Wang, Harry Xu, and Ravi Netravali. <i>Reducto: On-Camera Frame Filtering for Resource-Efficient Real-Time Video Analytics.</i> In the Proceedings of the Annual conference of the ACM Special Interest Group on Data Communication on the applications, technologies, architectures, and protocols for computer communication (SIGCOMM 2020).
+            [<a class="nav-link active" href="papers/reducto_sigcomm20.pdf"> PDF </a>]
+          </li>
+          <li>
+            <b>Arthi Padmanabhan</b>, Lan Wang, and Lixia Zhang. <i>Automated tunneling over IP Land: run NDN anywhere (poster)</i>. In the Proceedings of the 5th ACM Conference on Information-Centric Networking (ICN 2018).
+            [<a class="nav-link active" href="papers/Automated-Tunneling-Over-IP-Land-Run-NDN-Anywhere.pdf"> PDF </a>]
+          </li>
+        </ul>
+      </div>
+  </section>
+  <section class="section">
+      <div class="content">
+        <header><h1>Teaching</h1></header>
+        I currently serve as the head TA for the UCLA Computer Science department, training new TAs and evaluating current ones. I have been a TA for the following courses:
+        <ul>
+        
+        <li>TA training seminar (UCLA CS 495)</li>
+        <li>Big Data Systems (UCLA CS 249)</li>
+        <li>Introduction to Computer Science (UCLA CS 31)</li>
+        <li>Discrete Mathematics (Pomona College CS 55)</li>
+        <li>Fundamentals of Computer Science (Pomona College CS 52)</li>
+        </ul>
+
+        I also taught an introductory computer science class to middle schoolers for three years through Girls Who Code.  
+      </div>
+  </section>
+  </div>
+  </body>
+</html>
