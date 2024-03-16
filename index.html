@@ -30,7 +30,7 @@
                 Arthi Padmanabhan
               </h1>
               <h2 class="subtitle">
-                Visiting Assistant Professor<br>
+                Assistant Professor<br>
                 <!-- Computer Science Department<br> -->
                 Harvey Mudd College<br>
                 Email: arpadmanabhan@g.hmc.edu<br>
@@ -47,8 +47,7 @@
       <div class="content">
         <!-- <header><h1>About Me</h1></header> -->
         <p>
-          I joined Harvey Mudd College's Computer Science department in Fall 2022. I'm currently teaching Network Algorithmics, a course on the algorithms that make the internet run efficiently. I'm broadly interested in systems and networking, and my research focuses on building systems that enable scalable machine learning on real-time video data. Specifically, the systems I build target an improved tradeoff between performance (e.g., accuracy, latency) and resource usage (e.g., cost, memory, bandwidth consumption) in large-scale video analytics systems. <br><br>
-
+          I joined Harvey Mudd College's Computer Science department in Fall 2022. I'm currently teaching Principles of Computer Science (CS 60) and have previously taught courses in networking and systems. My research focuses on building systems that enable machine learning on resource-constrained edge devices. Specifically, the systems I build target an improved tradeoff between performance (e.g., accuracy, latency) and resource usage (e.g., energy, cost, memory, bandwidth consumption).
           Before joining HMC, I finished my Ph.D. at UCLA, where I was advised by <a href="http://web.cs.ucla.edu/~harryxu/">Harry Xu</a> and <a href="https://www.cs.princeton.edu/~ravian/">Ravi Netravali</a>. I also served as the head TA, training and evaluating the TAs in the CS department. Prior to UCLA, I was a software engineer at Microsoft for three years, and before that, I received a B.A. in Computer Science from Pomona College in 2014.
         </p>
       </div>
@@ -57,6 +56,10 @@
       <div class="content">
         <header><h1>Research</h1></header>
         <ul>
+        <h2 class="subtitle is-5">Optimizing Machine Learning for Low Power Devices</h2>
+          <ul>
+            With a team of wonderful undergraduate students (summer '23 pictured), I am working on enabling machine learning on extremely low power devices (in the mW range) that harvest their own energy using solar panels. We are exploring how to build fault tolerance into a system made of inherantly faulty devices!          </ul>
+            <img src="imgs/summer23.jpg" alt="Research Group Summer '23" />
         <h2 class="subtitle is-5">Gemel: Model Merging for Memory-Efficient Real-Time Video Analytics at the Edge</h2>
           <ul>
             Through a collaboration with Microsoft Research, we built Gemel, a system for lowering the memory footprint of running a diverse set of deep neural networks (DNNs) on the edge for processing video. We found that typical workloads of DNNs have large groups of layers that appear in multiple models, and keeping just one copy of them could result in significantly lower GPU memory usage. However, merging layers can result in lower accuracy. We designed a search heuristic to decide which layers could be shared while meeting accuracy constraints. Gemel lowered memory usage by up to 60% and will be incorporated into Microsoft's deployed pilot project, <a href="https://www.microsoft.com/en-us/research/project/live-video-analytics/">Rocket for Live Video Analytics</a>.
@@ -72,6 +75,9 @@
       <div class="content">
         <header><h1>Publications</h1></header>
         <ul>
+          <li>
+            Shan Yu, Zhenting Zhu, Yu Chen, Hanchen Xu, Pengzhan Zhao, Yang Wang, <b>Arthi Padmanabhan</b>, Hugo Latapie, and Harry Xu. <i>VQPy: An Object-Oriented Approach to Modern Video Analytics</i>. In the Proceedings of the 7th Annual Conference on Machine Learning and Systems (MLSys 2023).
+          </li>
           <li>
             <b>Arthi Padmanabhan*</b>, Neil Agarwal*, Anand Iyer, Ganesh Ananthanarayanan, Yuanchao Shu, Nikolaos Karianakis, Harry Xu, and Ravi Netravali. <i>Gemel: Model Merging for Memory-Efficient Real-Time Video Analytics at the Edge</i>. In the Proceedings of the 20th USENIX Conference on Networked Systems Design and Implementation (NSDI 2023).
           </li>
@@ -96,7 +102,9 @@
         <header><h1>Teaching</h1></header>
         Instructor:
         <ul>
-        <li><a href="https://www.cs.hmc.edu/~apadmanabhan/cs181ag-F22/">Network Algorithmics </a> (Harvey Mudd College CS 181AG)</li>
+        <li> Principles of Computer Science (Harvey Mudd College CS 60) - SP24, F23</li>
+        <li><a href="https://www.cs.hmc.edu/~apadmanabhan/CS181AI-S23/">Machine Learning System Design </a> (Harvey Mudd College CS 181AI) - S23</li>
+        <li><a href="https://www.cs.hmc.edu/~apadmanabhan/cs181ag-F22/">Network Algorithmics </a> (Harvey Mudd College CS 181AG) - F22</li>
       </ul>
       TA:
       <ul>
