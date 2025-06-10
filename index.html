@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Arthi Padmanabhan</title>
-    <link rel="shortcut icon" href="imgs/bruin_logo.png">
+    <link rel="shortcut icon" href="imgs/HMC_2inch.jpg">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"> -->
     <link rel="stylesheet" href="bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -47,34 +47,51 @@
       <div class="content">
         <!-- <header><h1>About Me</h1></header> -->
         <p>
-          I joined Harvey Mudd College's Computer Science department in Fall 2022. I'm currently teaching Principles of Computer Science (CS 60) and have previously taught courses in networking and systems. My research focuses on building systems that enable machine learning on resource-constrained edge devices. Specifically, the systems I build target an improved tradeoff between performance (e.g., accuracy, latency) and resource usage (e.g., energy, cost, memory, bandwidth consumption).
+          I joined Harvey Mudd College’s Computer Science department in Fall 2022. This past spring, I taught Internet & Society (CS 181AQ) through the Inside Out Prison Exchange Program, as well as Computer Systems (CS 105). I am broadly interested in systems and networking, and my research focuses on lowering the energy consumption of computer systems, from the internet to machine learning applications.
           
-          Before joining HMC, I finished my Ph.D. at UCLA, where I was advised by <a href="http://web.cs.ucla.edu/~harryxu/">Harry Xu</a> and <a href="https://www.cs.princeton.edu/~ravian/">Ravi Netravali</a>. I also served as the head TA, training and evaluating the TAs in the CS department. Prior to UCLA, I was a software engineer at Microsoft for three years, and before that, I received a B.A. in Computer Science from Pomona College in 2014.
+          Before joining HMC, I finished my Ph.D. at UCLA, where I was advised by <a href="http://web.cs.ucla.edu/~harryxu/">Harry Xu</a> and <a href="https://www.cs.princeton.edu/~ravian/">Ravi Netravali</a>. Prior to UCLA, I was a software engineer at Microsoft for three years, and before that, I received a B.A. in Computer Science from Pomona College in 2014.
         </p>
+      </div>
+  </section>
+  <section class="section">
+      <div class="content">
+        <header><h1>Teaching</h1></header>
+        Current Courses:
+        <ul>
+          <li>Computer Systems (CS 105) - Spring 2025, Fall 2024</li>
+          <li>Internet & Society (CS 181AQ), through the <a href="https://colleges.claremont.edu/justice-education/inside-out-courses/">Inside Out program</a> - Spring 2025</li>
+        </ul>
+        Past Courses
+        <ul>
+          <li>Network Algorithmics (CS 181AG) - Fall 2024, Fall 2022</li>
+          <li>Principles of Computer Science (CS 60) - Spring 2024, Fall 2023</li>
+          <li>Machine Learning System Design (CS 181AI) - Spring 2023</li>
+        </ul>
       </div>
   </section>
   <section class="section">
       <div class="content">
         <header><h1>Research</h1></header>
         <ul>
-        <h2 class="subtitle is-5">Optimizing Machine Learning for Low Power Devices</h2>
+        <h2 class="subtitle is-5">TinyML</h2>
+        My students and I are working on running machine learning on extremely low power devices (in the mW range).
           <ul>
-            With a team of wonderful undergraduate students (summer '23 pictured), I am working on enabling machine learning on extremely low power devices (in the mW range) that harvest their own energy using solar panels. We are exploring how to build fault tolerance into a system made of inherantly faulty devices! <img src="imgs/summer23.jpg" alt="Research Group Summer '23" width="300" height="300" style="float:right"/></ul>
-        <h2 class="subtitle is-5">Gemel: Model Merging for Memory-Efficient Real-Time Video Analytics at the Edge</h2>
-          <ul>
-            Through a collaboration with Microsoft Research, we built Gemel, a system for lowering the memory footprint of running a diverse set of deep neural networks (DNNs) on the edge for processing video. We found that typical workloads of DNNs have large groups of layers that appear in multiple models, and keeping just one copy of them could result in significantly lower GPU memory usage. However, merging layers can result in lower accuracy. We designed a search heuristic to decide which layers could be shared while meeting accuracy constraints. Gemel lowered memory usage by up to 60% and will be incorporated into Microsoft's deployed pilot project, <a href="https://www.microsoft.com/en-us/research/project/live-video-analytics/">Rocket for Live Video Analytics</a>.
+            <li>In December, Sean Nian (SJSU ’24) presented the results of his project from last summer with Ket Hollingsworth (HMC ’25) and Alan Gutierrez (HMC ’26) at INTERACT at SEC (Symposium of Edge Computing) in Rome. Their work analyzed the network overhead of running TinyML in a distributed setting.</li>
+            <li>Diya Gangwar (HMC ’26) and Angelina Tsai (HMC ’26) did an independent study where they ran a small ML model on a solar-powered ESP32</li>          
           </ul>
-        <h2 class="subtitle is-5">Reducto: On-Camera Frame Filtering for Resource-Efficient Real-Time Video Analytics</h2>
+        <h2 class="subtitle is-5">Sustainable Computing</h2>
+        We are also studying how to lower the carbon footprint of commonly used websites.
           <ul>
-            I worked with colleagues at UCLA to build a system that filters out unnecessary frames for responding to video analytics queries directly at the camera. Our filtering methods use light-weight frame differencing features, allowing real-time filtering even on cheap cameras. These methods filtered over 50% of frames while meeting accuracy targets, thereby lowering both bandwidth usage and latency by 22%.
+            <li>Last summer, Grace Everts (HMC ’26) did a study to better understand user tolerance for aesthetic changes that lower the carbon footprints of websites. Her work is in submission, and a visual representation of her study was accepted to Issue 9 of the <a href="https://branch.climateaction.tech/">Branch magazine: A Just and Sustainable Internet for All</a></li>
           </ul>
-        </ul>
-      </div>
-  </section>
-  <section class="section">
-      <div class="content">
-        <header><h1>Publications</h1></header>
+        <h2 class="subtitle is-5">Publications</h2>
         <ul>
+          <li>
+            Ket Hollingsworth, Sean Nian, Alan Gutierrez, and <b>Arthi Padmanabhan</b>. <i>An Analysis of Network Overhead in Distributed TinyML</i>. In the Proceedings of the 1st Workshop on Communication and Networking for TinyML based Consumer Applications (INTERACT at SEC 2024).
+          </li>
+          <li>
+            Sifat Ut Taki, <b>Arthi Padmanabhan</b>, and Spyridon Mastorakis. <i>FusedInf: Efficient Swapping of DNN Models for On-Demand Serverless Inference Services on the Edge</i>. In the Proceedings of the 9th IEEE/ACM Symposium on Edge Computing (SEC 2024).
+          </li>
           <li>
             Shan Yu, Zhenting Zhu, Yu Chen, Hanchen Xu, Pengzhan Zhao, Yang Wang, <b>Arthi Padmanabhan</b>, Hugo Latapie, and Harry Xu. <i>VQPy: An Object-Oriented Approach to Modern Video Analytics</i>. In the Proceedings of the 7th Annual Conference on Machine Learning and Systems (MLSys 2023).
           </li>
@@ -95,27 +112,7 @@
             [<a class="nav-link active" href="papers/Automated-Tunneling-Over-IP-Land-Run-NDN-Anywhere.pdf"> PDF </a>]
           </li>
         </ul>
-      </div>
-  </section>
-  <section class="section">
-      <div class="content">
-        <header><h1>Teaching</h1></header>
-        Instructor:
-        <ul>
-        <li> Principles of Computer Science (Harvey Mudd College CS 60) - SP24, F23</li>
-        <li><a href="https://www.cs.hmc.edu/~apadmanabhan/CS181AI-S23/">Machine Learning System Design </a> (Harvey Mudd College CS 181AI) - SP23</li>
-        <li><a href="https://www.cs.hmc.edu/~apadmanabhan/cs181ag-F22/">Network Algorithmics </a> (Harvey Mudd College CS 181AG) - F22</li>
-      </ul>
-      TA:
-      <ul>
-        <li>TA training seminar (UCLA CS 495)</li>
-        <li>Big Data Systems (UCLA CS 249)</li>
-        <li>Introduction to Computer Science (UCLA CS 31)</li>
-        <li>Discrete Mathematics (Pomona College CS 55)</li>
-        <li>Fundamentals of Computer Science (Pomona College CS 52)</li>
         </ul>
-
-        I also taught an introductory computer science class to middle schoolers for three years through Girls Who Code.  
       </div>
   </section>
   </div>
